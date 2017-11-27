@@ -1,1 +1,32 @@
+button {
+    width: 100px;
+    color: black;
+    font-size: small;
+    font-family: Courier;
+}
 
+
+body {
+    font-family: Courier;
+    vertical-align: top;
+    background-color: #e6ae5b;
+}
+
+select {
+    font-size: small;
+    font-family: Courier;
+}
+
+#data {
+    width: 100%;
+    text-align: center;
+    /*border: 1px solid black;*/
+}
+
+#signDiv {
+    font-size:30px;
+}
+
+div {
+    padding: 5px;
+}
