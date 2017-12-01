@@ -1,19 +1,24 @@
 button {
-    width: 100px;
+    width: 120px;
     color: black;
-    font-size: small;
+    font-size: medium;
     font-family: Courier;
+}
+
+button:hover{
+    color: white;
+    background-color: rgba(230, 66, 1, 0.58);
 }
 
 
 body {
     font-family: Courier;
     vertical-align: top;
-    background-color: #e6ae5b;
+    background-color: rgba(230, 102, 9, 0.58);
 }
 
 select {
-    font-size: small;
+    font-size: medium;
     font-family: Courier;
 }
 
@@ -29,4 +34,14 @@ select {
 
 div {
     padding: 5px;
+}
+
+#imageHoroscope{
+    padding: 20px;
+}
+
+#name {
+    font-size: medium;
+    font-family: Courier;
+    width: 120px;
 }
