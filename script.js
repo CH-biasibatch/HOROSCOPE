@@ -24,9 +24,9 @@ var messages = ["Someone close poses an offbeat but fascinating question, and yo
 
 "You may question how you can best help the people around you today, but don't give in to despair. You always look for ways to benefit those less fortunate, whether you want to contribute to your community in a new way or just take your current involvement up a notch. Look into all of your options so that you can make a real difference."]
 
-//https://www.astrology.com/horoscopes.html ----- (redo the horoscopes)
 
 function getHoroscope() {
+
     var month = parseInt(document.getElementById("month").value);
     var day = parseInt(document.getElementById("day").value);
     console.log(month);
@@ -48,12 +48,19 @@ function getHoroscope() {
 }
 
 function getImage(sign){
-    var imageIndex=["aquarius.jpg","pisces.png","aries.jpg","taurus.jpg", "gemini.jpg","cancer.jpg","leo.jpg","virgo.png","libra.jpg","scorpio.jpg","sagittarius.png","capricorn.jpg"]
+    var imageIndex=["aquarius.jpg","pisces.png","aries.jpg","taurus.jpg", "gemini.jpg","cancer.jpg","leo.jpg","virgo.png","libra.jpg","scorpio.jpg","sagittarius.png","capricorn.jpg"];
     console.log(imageIndex[sign]);
     return imageIndex[sign];
 }
 
-
+function fixMonth(month){
+    var result = "";
+    var daysInMonths = [0,31,28,31,30,31,30,31,31,30,31,30,31];
+    for(var i = 1; i <= daysInMonths[month]; i ++){
+        result += "<option value =" + i + ">" + i + "</option>";
+    }
+    document.getElementById("day").innerHTML = result;
+}
 
 function determineSign(month,day){
 

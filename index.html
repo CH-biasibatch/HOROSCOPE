@@ -5,16 +5,22 @@
     <link rel="stylesheet" href="styles.css"/>
 
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>HOROSCOPE</title>
+
 
 </head>
 <body>
 
 <div id="data">
 
+<h1>HOROSCOPE</h1>
+
+<body onload="fixMonth(1)">
+
 <input type="text" id="name" value="" size="medium">
 
-<select id="month">
+
+<select id="month" onchange="fixMonth(this.value)">
     <option value="1"> January</option>
     <option value="2"> February</option>
     <option value="3"> March</option>
@@ -62,6 +68,8 @@
     <option value="30">30</option>
     <option value="31">31</option>
 </select>
+
+
 
     <select id="year">
         <option value="1">1960</option>
@@ -133,7 +141,7 @@
 <div id="messageDiv"></div>
 <div id="imageHoroscope"></div>
 
-
+</body>
 </div>
 
 
